@@ -1,6 +1,7 @@
 # PM2 UI 🌐
 
 Modern user interface for managing PM2 processes with Node.js, Next.js, TailwindCSS, and HeadlessUI.
+![pm2-ui](https://github.com/thenickygee/pm2-ui/assets/75292383/7929fd4e-f6fb-46ab-a152-38b9c5d96844)
 
 ## Table of Contents 📚
 
