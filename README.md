@@ -9,7 +9,7 @@ Built with:
 ![dashboard](https://github.com/thenickygee/pm2-ui/assets/75292383/dff40b00-4280-43c8-98e5-68bf6c88bd4c)
 
 
-##📚 Table of Contents 
+## 📚 Table of Contents 
 
 - [Getting Started](#getting-started)
 - [Features](#features)
@@ -17,7 +17,7 @@ Built with:
 - [Learn More](#learn-more)
 - [Deploy on Vercel](#deploy-on-vercel)
 
-##🚀 Getting Started
+## 🚀 Getting Started
 
 To start an application with PM2, run:
 
@@ -41,9 +41,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) (or the port your app starts on) to view it in your browser.
 
-##✨ Features 
+## ✨ Features 
 
-##📊 Process Data
+## 📊 Process Data
 
 - CPU Usage (%)
 - Memory Usage (MB)
@@ -52,7 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 ![closeup-process](https://github.com/thenickygee/pm2-ui/assets/75292383/5745585c-f1d8-489a-aa3f-e8013dfee682)
 
 
-##⚙️ Process Actions
+## ⚙️ Process Actions
 
 - Start
 - Stop
@@ -67,7 +67,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 ![logs](https://github.com/thenickygee/pm2-ui/assets/75292383/91821ca1-5e96-462e-91ad-f6e28a689201)
 
 
-## Process Filters 🔍
+## 🔍 Process Filters
 
 - By name
 - By status: online, error, stopped
@@ -78,14 +78,14 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 > **Note:** The `.env.local` file is included in version control for auth purposes.
 
 
-## Login Credentials 🔐
+## 🔐 Login Credentials
 
 - Username: `admin`
 - Password: `admin`
 
 
-## Learn More 📖
-
+## 📖 Learn More
+- [PM2 Docs]([ttps://pm2.keymetrics.io](https://pm2.keymetrics.io/docs/usage/quick-start/) - PM2 Docs.
 - [Next.js Documentation](https://nextjs.org/docs) - Features and API.
 - [Learn Next.js](https://nextjs.org/learn) - Interactive tutorial.
 - [Next.js GitHub Repository](https://github.com/vercel/next.js/) - Feedback and contributions.
