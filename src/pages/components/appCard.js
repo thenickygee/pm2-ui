@@ -199,7 +199,7 @@ const AppCard = () => {
           return (
             <div
               key={groupName}
-              className={`${groupBgColorClass} mb-2 min-w-full rounded-md p-2 shadow-lg flex flex-col gap-4 justify-between bg-opacity-40`}
+              className={`${groupBgColorClass} mb-2 min-w-full overflow-y-auto rounded-md p-2 shadow-lg flex flex-col gap-4 justify-between bg-opacity-40`}
             >
               <h3 className='text-xl font-bold text-white flex gap-2 items-center align-middle'>
                 <FontAwesomeIcon icon={faCube} className='h-5 text-amber-50' />
@@ -365,7 +365,7 @@ const AppCard = () => {
                                 >
                                   <FontAwesomeIcon
                                     icon={faSyncAlt}
-                                    className='h-5 text-amber-50'
+                                    className='text-amber-50'
                                   />
                                   Reload
                                 </button>
@@ -378,7 +378,7 @@ const AppCard = () => {
                                 >
                                   <FontAwesomeIcon
                                     icon={faRecycle}
-                                    className='h-5 text-white'
+                                    className='text-white'
                                   />
                                   Restart
                                 </button>
@@ -389,22 +389,9 @@ const AppCard = () => {
                                 >
                                   <FontAwesomeIcon
                                     icon={faStop}
-                                    className='h-5 text-white'
+                                    className='text-white'
                                   />
                                   Stop
-                                </button>
-                                <button
-                                  className='flex items-center justify-center gap-2 p-1 px-3 bg-zinc-800 rounded-md hover:bg-red-900 text-zinc-100'
-                                  aria-label='delete'
-                                  onClick={() =>
-                                    pm2AppAction(app.name, 'delete')
-                                  }
-                                >
-                                  <FontAwesomeIcon
-                                    icon={faSkull}
-                                    className='h-5 text-white'
-                                  />
-                                  Remove
                                 </button>
                               </div>
                             </Popover.Panel>
@@ -418,7 +405,7 @@ const AppCard = () => {
                         >
                           <FontAwesomeIcon
                             icon={faPlayCircle}
-                            className='h-5 text-amber-50'
+                            className='text-amber-50'
                           />
                           Start
                         </button>
@@ -427,6 +414,14 @@ const AppCard = () => {
                   </div>
                 ))}
               </div>
+              <button
+                className='flex items-center justify-center gap-2 p-1 px-3 bg-zinc-800 rounded-md hover:bg-red-900 text-zinc-100 -mt-1'
+                aria-label='delete'
+                onClick={() => pm2AppAction(app.name, 'delete')}
+              >
+                <FontAwesomeIcon icon={faSkull} className=' text-white' />
+                Kill
+              </button>
             </div>
           );
         })}
