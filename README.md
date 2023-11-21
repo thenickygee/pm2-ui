@@ -85,7 +85,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 
 ## 📖 Learn More
-- [PM2 Docs]([ttps://pm2.keymetrics.io](https://pm2.keymetrics.io/docs/usage/quick-start/) - PM2 Docs.
+- [PM2 Docs] (https://pm2.keymetrics.io/docs/usage/quick-start/) - PM2 Offical Documents.
 - [Next.js Documentation](https://nextjs.org/docs) - Features and API.
 - [Learn Next.js](https://nextjs.org/learn) - Interactive tutorial.
 - [Next.js GitHub Repository](https://github.com/vercel/next.js/) - Feedback and contributions.
