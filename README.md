@@ -46,16 +46,18 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - Process ID (PID)
 
 ### ⚙️ Process Actions
-![actions](https://github.com/thenickygee/pm2-ui/assets/75292383/8fbbe2f5-99d4-42b8-b1c2-a06d50dafeb0)
 
 - Start
 - Stop
 - Restart
 - Reload
+![actions](https://github.com/thenickygee/pm2-ui/assets/75292383/a04f4482-a010-4d3c-afd4-70bce0256d6a)
 
 ### 📜 Process Logs
 
 - Standard input & output
+![logs](https://github.com/thenickygee/pm2-ui/assets/75292383/91821ca1-5e96-462e-91ad-f6e28a689201)
+
 
 ### Process Filters 🔍
 
