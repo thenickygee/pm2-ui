@@ -14,7 +14,7 @@ export default function handler(req, res) {
     return;
   }
 
-  const validActions = ['restart', 'stop', 'reload', 'start'];
+  const validActions = ['restart', 'stop', 'reload', 'start', 'delete'];
   if (!validActions.includes(action)) {
     res.status(400).send('Invalid action');
     return;

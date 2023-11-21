@@ -12,6 +12,7 @@ import {
   faMicrochip,
   faPlayCircle,
   faRecycle,
+  faSkull,
   faStop,
   faSyncAlt,
   faTerminal,
@@ -58,7 +59,7 @@ const AppCard = () => {
 
   if (apps.length === 0) {
     return (
-      <div className='text-center text-white bg-zinc-700 p-3 rounded-md select-none cursor-default'>
+      <div className='text-center text-white bg-zinc-700 p-3 rounded-md select-none cursor-default mt-4'>
         No processes running
       </div>
     );
@@ -391,6 +392,19 @@ const AppCard = () => {
                                     className='h-5 text-white'
                                   />
                                   Stop
+                                </button>
+                                <button
+                                  className='flex items-center justify-center gap-2 p-1 px-3 bg-zinc-800 rounded-md hover:bg-red-900 text-zinc-100'
+                                  aria-label='delete'
+                                  onClick={() =>
+                                    pm2AppAction(app.name, 'delete')
+                                  }
+                                >
+                                  <FontAwesomeIcon
+                                    icon={faSkull}
+                                    className='h-5 text-white'
+                                  />
+                                  Remove
                                 </button>
                               </div>
                             </Popover.Panel>
