@@ -45,6 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - Process ID (PID)
 ![closeup-process](https://github.com/thenickygee/pm2-ui/assets/75292383/5745585c-f1d8-489a-aa3f-e8013dfee682)
 
+
 ### ⚙️ Process Actions
 
 - Start
@@ -63,14 +64,18 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 - By name
 - By status: online, error, stopped
-- ![filters](https://github.com/thenickygee/pm2-ui/assets/75292383/9ba4aac6-c3d7-49e1-b192-8c0547a7b599)
+- 
+![filter](https://github.com/thenickygee/pm2-ui/assets/75292383/981b9a3e-d5a7-403c-9972-5a33c9b1c407)
+
 
 > **Note:** The `.env.local` file is included in version control for auth purposes.
+
 
 ## Login Credentials 🔐
 
 - Username: `admin`
 - Password: `admin`
+
 
 ## Learn More 📖
 
