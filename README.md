@@ -1,8 +1,7 @@
 # PM2 UI 🌐
 
 Modern responsive user dashboard for managing PM2 processes with Node.js, Next.js, TailwindCSS, and HeadlessUI.
-![pm2-ui](https://github.com/thenickygee/pm2-ui/assets/75292383/7929fd4e-f6fb-46ab-a152-38b9c5d96844)
-![processes](https://github.com/thenickygee/pm2-ui/assets/75292383/cf5f9db1-2681-4195-aa0d-38f9ab156902)
+![dashboard](https://github.com/thenickygee/pm2-ui/assets/75292383/dff40b00-4280-43c8-98e5-68bf6c88bd4c)
 
 ## Table of Contents 📚
 
