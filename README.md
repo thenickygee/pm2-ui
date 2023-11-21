@@ -43,6 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - Memory Usage (MB)
 - Uptime (d, h, m, s)
 - Process ID (PID)
+![closeup-process](https://github.com/thenickygee/pm2-ui/assets/75292383/5745585c-f1d8-489a-aa3f-e8013dfee682)
 
 ### ⚙️ Process Actions
 
