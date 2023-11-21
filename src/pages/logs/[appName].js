@@ -87,7 +87,7 @@ const LogsPage = (app) => {
         setLoading(true);
         try {
           const response = await fetch(
-            `/api/logs?appName=${encodeURIComponent(appName)}`
+            `/api/pm2/logs?appName=${encodeURIComponent(appName)}`
           );
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -346,22 +346,22 @@ const LogsPage = (app) => {
           <div>Loading...</div>
         ) : (
           <>
-            <div className='flex flex-col max-w-5xl gap-2 text-gray-100'>
-              <div className='mb-4 bg-zinc-800 rounded-md w-full p-3'>
+            <div className='flex flex-col 2xl:max-w-[1400px] gap-2 text-gray-100'>
+              <div className='mb-4 bg-zinc-800 rounded-md w-full p-3 whitespace-pre-wrap'>
                 <h2 className='text-xl font-bold bg-zinc-900 p-2 rounded-md'>
                   Standard Output:
                 </h2>
-                <pre>
+                <pre className='log-wrap break-all whitespace-pre'>
                   {logs.out.map((line, index) => (
                     <div key={`out-line-${index}`}>{line}</div>
                   ))}
                 </pre>
               </div>
-              <div className='mb-4 bg-zinc-800 rounded-md w-full p-3'>
+              <div className='mb-4 bg-zinc-800 rounded-md w-full p-3 break-words'>
                 <h2 className='text-xl font-bold bg-zinc-900 p-2 rounded-md'>
                   Error Output:
                 </h2>
-                <pre>
+                <pre className='log-wrap break-all whitespace-pre-wrap'>
                   {logs.error.map((line, index) => (
                     <div key={`error-line-${index}`}>{line}</div>
                   ))}

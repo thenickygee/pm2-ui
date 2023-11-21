@@ -338,10 +338,11 @@ const AppCard = () => {
                               />
                               Actions
                             </Popover.Button>
+                            {/* {app.index !== undefined && ( */}
                             <Link
                               href={`/logs/${encodeURIComponent(
                                 app.name
-                              )}?index=${app.index}`}
+                              )}?index=${app.index || 0}`}
                             >
                               <button className='bg-zinc-900 hover:border-zinc-400 border-zinc-800 border rounded-md py-3 px-6 text-zinc-100 w-full flex gap-2'>
                                 <FontAwesomeIcon
@@ -351,6 +352,7 @@ const AppCard = () => {
                                 Logs
                               </button>
                             </Link>
+                            {/* )} */}
                             <Popover.Panel className='absolute z-10 -mt-36 shadow-2xl mr-24'>
                               <div className='flex flex-col gap-2 bg-black shadow-2xl p-3 rounded-md'>
                                 <button
