@@ -45,14 +45,15 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - Uptime (d, h, m, s)
 - Process ID (PID)
 
-### Process Actions ⚙️
+### ⚙️ Process Actions
+![actions](https://github.com/thenickygee/pm2-ui/assets/75292383/8fbbe2f5-99d4-42b8-b1c2-a06d50dafeb0)
 
 - Start
 - Stop
 - Restart
 - Reload
 
-### Process Logs 📜
+### 📜 Process Logs
 
 - Standard input & output
 
@@ -60,6 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 - By name
 - By status: online, error, stopped
+- ![filters](https://github.com/thenickygee/pm2-ui/assets/75292383/9ba4aac6-c3d7-49e1-b192-8c0547a7b599)
 
 > **Note:** The `.env.local` file is included in version control for auth purposes.
 
