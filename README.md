@@ -1,6 +1,6 @@
 # PM2 UI
 
-# node.js | next.js | tailwindcss
+# node.js | next.js | tailwindcss | headlessUI
 
 To start an application with pm2 run:
 ` pm2 start '<npm run dev>  -i <instances> --name <name>`
@@ -12,25 +12,25 @@ password: admin
 
 #Features
 
-# Process data
+## Process data
 
 - CPU %
 - MEM MB
 - UPTIME d,h,m,s
 - PID #
 
-# Process actions
+## Process actions
 
 - start
 - stop
 - restart
 - reload
 
-# Process logs
+## Process logs
 
 - standard in & out
 
-# Process Filers
+## Process Filters
 
 - name
 - online, error, stopped
