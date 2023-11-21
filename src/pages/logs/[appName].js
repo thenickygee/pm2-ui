@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faClock,
   faCog,
-  faCube,
   faIdCard,
   faMemory,
   faMicrochip,
@@ -33,7 +32,7 @@ const LogsPage = (app) => {
 
   useEffect(() => {
     async function fetchApps() {
-      const res = await fetch('/api/apps');
+      const res = await fetch('/api/pm2/apps');
       const data = await res.json();
 
       const grouped = data.reduce((acc, app) => {
@@ -68,10 +67,10 @@ const LogsPage = (app) => {
       }
 
       const result = await response.json();
-      toast.success(result.message); // Display success toast
+      toast.success(result.message);
     } catch (error) {
       console.error('Error performing action on app:', error);
-      toast.error('Error performing action on app'); // Display error toast
+      toast.error('Error performing action on app');
     }
   };
 
@@ -93,7 +92,6 @@ const LogsPage = (app) => {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
           const data = await response.json();
-          // Ensure the data has the expected structure
           if (
             data.out &&
             Array.isArray(data.out) &&
