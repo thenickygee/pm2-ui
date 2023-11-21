@@ -25,7 +25,7 @@ To start an application with PM2, run:
 pm2 start 'npm run dev' -i <instances> --name <name>
 ```
 
-### 🖥️ Development Server
+## 🖥️ Development Server
 
 Run the development server:
 
@@ -43,7 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 ##✨ Features 
 
-###📊 Process Data
+##📊 Process Data
 
 - CPU Usage (%)
 - Memory Usage (MB)
@@ -52,7 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 ![closeup-process](https://github.com/thenickygee/pm2-ui/assets/75292383/5745585c-f1d8-489a-aa3f-e8013dfee682)
 
 
-###⚙️ Process Actions
+##⚙️ Process Actions
 
 - Start
 - Stop
@@ -61,13 +61,13 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
   
 ![actions](https://github.com/thenickygee/pm2-ui/assets/75292383/a04f4482-a010-4d3c-afd4-70bce0256d6a)
 
-### 📜 Process Logs
+## 📜 Process Logs
 
 - Standard input & output
 ![logs](https://github.com/thenickygee/pm2-ui/assets/75292383/91821ca1-5e96-462e-91ad-f6e28a689201)
 
 
-### Process Filters 🔍
+## Process Filters 🔍
 
 - By name
 - By status: online, error, stopped
