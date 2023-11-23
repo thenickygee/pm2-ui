@@ -91,9 +91,9 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - [Next.js GitHub Repository](https://github.com/vercel/next.js/) - Feedback and contributions.
   This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) for font optimization.
 
-## Deploy on Vercel 🚢
+## 🚢 Deploy on Vercel
 
 Deploy your Next.js app easily using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-## Contributing 🤝
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](#).
