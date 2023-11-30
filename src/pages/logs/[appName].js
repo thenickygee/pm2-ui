@@ -118,12 +118,22 @@ const LogsPage = () => {
     return 'text-red-500';
   }
 
+  const getAppBackgroundColor = (app) => {
+    if (app && app.status === 'online') {
+      return 'bg-green-800'; // App is online
+    } else if (app && app.status === 'offline') {
+      return 'bg-red-800'; // App is offline
+    } else {
+      return 'bg-orange-700'; // App is in a different state (e.g., error, stopped, etc.)
+    }
+  };
+
   return (
     <>
       <Navbar />
       <div className='bg-zinc-900 min-h-screen min-w-screen p-4 pt-16'>
         <Link href={`/`}>
-          <button className='bg-zinc-700 hover:border-zinc-400 border-zinc-800 border rounded-md py-2 px-6 mb-4 mt-2 font-bold text-gray-100 gap-2 flex justify-center align-middle items-center'>
+          <button className='bg-zinc-700 hover:border-zinc-400 w-min border-zinc-800 border rounded-md py-2 px-6 mb-4 mt-2 font-bold text-gray-100 gap-2 flex justify-center align-middle items-center'>
             <FontAwesomeIcon icon={faBackward} className=' text-gray-100' />{' '}
             DASHBOARD
           </button>
@@ -131,9 +141,11 @@ const LogsPage = () => {
         {currentAppData && (
           <div
             key={currentAppData.instanceId}
-            className='flex flex-col rounded-md shadow-xl min-w-max max-w-content bg-zinc-950 p-2 py-0 pb-2 w-full max-w-5xl mb-4'
+            className={`${getAppBackgroundColor(
+              currentAppData
+            )} mb-2 w-1/2 min-w-max overflow-y-auto rounded-md p-2 shadow-lg flex flex-col gap-4 justify-between bg-opacity-40`}
           >
-            <div className='flex flex-col'>
+            <div className='flex flex-col bg-zinc-900 rounded-md p-2'>
               <div className='flex items-center justify-between gap-6 p-2 mb-2 rounded-md'>
                 <p className='flex items-center gap-2 text-xl font-bold text-gray-100'>
                   {' '}
