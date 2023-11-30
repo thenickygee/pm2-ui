@@ -4,7 +4,7 @@ import readLastLines from 'read-last-lines';
 
 export default function logsHandler(req, res) {
   const { appName } = req.query;
-  const linesToRead = 200; // This is the number of last lines you want to read from the log
+  const linesToRead = 200;
 
   pm2.connect((err) => {
     if (err) {

@@ -48,7 +48,7 @@ const LogsPage = (app) => {
 
     const intervalId = setInterval(() => {
       fetchApps();
-    }, 1000);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -132,15 +132,14 @@ const LogsPage = (app) => {
   return (
     <>
       <Navbar />
-
       <div className='bg-zinc-900 min-h-screen min-w-screen p-4 pt-16'>
         <Link href={`/`}>
-          <button className='bg-zinc-700 hover:border-zinc-400 border-zinc-800 border rounded-md py-3 px-6 mb-4 pt-4 font-bold text-gray-100 gap-2 flex items-center'>
+          <button className='bg-zinc-700 hover:border-zinc-400 border-zinc-800 border rounded-md py-2 px-6 mb-4 mt-2 font-bold text-gray-100 gap-2 flex justify-center align-middle items-center'>
             <FontAwesomeIcon icon={faBackward} className=' text-gray-100' />{' '}
             DASHBOARD
           </button>
         </Link>
-
+        {app.status}
         <div
           key={app.instanceId}
           className='flex flex-col rounded-md shadow-xl min-w-max max-w-content bg-zinc-950 p-2 py-0 pb-2 w-full max-w-5xl mb-4'
@@ -336,12 +335,11 @@ const LogsPage = (app) => {
             )}
           </div>
         </div>
-
         <h1 className='text-2xl font-bold mb-4 text-gray-100'>
           Logs for {appName}
         </h1>
         {loading ? (
-          <div>Loading...</div>
+          <div className='text-white'>Loading...</div>
         ) : (
           <>
             <div className='flex flex-col 2xl:max-w-[1400px] gap-2 text-gray-100'>

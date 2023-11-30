@@ -414,14 +414,32 @@ const AppCard = () => {
                   </div>
                 ))}
               </div>
-              <button
-                className='flex items-center justify-center gap-2 p-1 px-3 bg-zinc-800 rounded-md hover:bg-red-900 text-zinc-100 -mt-1'
-                aria-label='delete'
-                onClick={() => pm2AppAction(app.name, 'delete')}
-              >
-                <FontAwesomeIcon icon={faSkull} className=' text-white' />
-                Kill
-              </button>
+              <Popover className='relative'>
+                <Popover.Button className='flex items-center justify-center gap-2 p-1 px-3 bg-zinc-800 rounded-md hover:bg-red-900 text-zinc-100 -mt-1 cursor-pointer'>
+                  <FontAwesomeIcon icon={faSkull} className='text-white' />
+                  Kill
+                </Popover.Button>
+                <Popover.Panel className='absolute z-50 bg-black rounded-lg shadow-xl -top-[130px] p-4 mt-2 text-gray-100 flex flex-col gap-2 items-center'>
+                  <p>Are you sure you want to kill all instances?</p>
+                  <div className='flex gap-2'>
+                    <button
+                      className='bg-green-500 hover:bg-green-600 text-white p-2 rounded-md cursor-pointer'
+                      onClick={() => {
+                        pm2AppAction(app.name, 'delete');
+                        // Close the Popover
+                      }}
+                    >
+                      Yes
+                    </button>
+                    <Popover.Button
+                      as='button'
+                      className='bg-red-500 hover:bg-red-600 text-white p-2 rounded-md cursor-pointer'
+                    >
+                      No
+                    </Popover.Button>
+                  </div>
+                </Popover.Panel>
+              </Popover>
             </div>
           );
         })}
