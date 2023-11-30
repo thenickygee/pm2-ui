@@ -41,7 +41,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) (or the port your app starts on) to view it in your browser.
 
-## ✨ Features 
+## 🔐 Login Credentials
+
+- Username: `admin`
+- Password: `admin`
+- 
+
+# ✨ Features 
 
 ## 📊 Process Data
 
@@ -77,11 +83,6 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 > **Note:** The `.env.local` file is included in version control for auth purposes.
 
-
-## 🔐 Login Credentials
-
-- Username: `admin`
-- Password: `admin`
 
 
 ## 📖 Learn More
