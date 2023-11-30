@@ -30,13 +30,13 @@ const Navbar = () => {
               '_blank'
             )
           }
-          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-blue-400 to-blue-500 hover:bg-blue-300'
+          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-zinc-600 to-zinc-700 hover:bg-blue-300'
         >
           <FontAwesomeIcon icon={faBookBookmark} className='pr-2' /> PM2
         </button>
         <button
           onClick={() => window.open('https://www.dev.azure.com', '_blank')}
-          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-blue-400 to-blue-500 hover:bg-blue-300'
+          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-zinc-600 to-zinc-700 hover:bg-blue-300'
         >
           <FontAwesomeIcon icon={faWaveSquare} className='pr-2' /> AZURE
         </button>
@@ -44,7 +44,7 @@ const Navbar = () => {
           onClick={() =>
             window.open('https://github.com/thenickygee/pm2-ui', '_blank')
           }
-          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-blue-400 to-blue-500 hover:bg-blue-300'
+          className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-zinc-600 to-zinc-700   hover:bg-blue-300'
         >
           <FontAwesomeIcon icon={faGithub} className='pr-2' /> GITHUB
         </button>
