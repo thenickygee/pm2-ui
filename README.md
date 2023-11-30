@@ -1,6 +1,6 @@
 # PM2 UI 🌐
 
-Modern responsive user dashboard for managing PM2 processes with Node. 
+Modern responsive dashboard for managing PM2 processes with Node. 
 Built with:
 * Next.js
 * TailwindCSS
