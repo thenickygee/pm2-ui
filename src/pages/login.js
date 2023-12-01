@@ -8,6 +8,7 @@ import { signIn } from 'next-auth/react';
 import Image from 'next/image';
 import Navbar from './components/nav';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import AuthButton from './components/authButton';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -18,6 +19,9 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Clear any previous error messages
+    setError('');
+
     const response = await fetch('/api/login', {
       method: 'POST',
       headers: {
@@ -27,9 +31,11 @@ export default function Login() {
     });
 
     if (response.ok) {
+      // Redirect to the home page after successful login
       router.push('/');
-      console.log('logged in');
+      console.log('Logged in');
     } else {
+      // Display an error message if login fails
       setError('Failed to login. Check your username and password.');
     }
   };
@@ -40,67 +46,9 @@ export default function Login() {
   }`;
 
   return (
-    <div className='min-h-screen min-w-screen bg-zinc-800 text-white'>
+    <div className='min-h-screen min-w-screen bg-zinc-800 text-white flex align-top items-center justify-center'>
       <Navbar />
-      <div className='pt-20'>
-        <div className='flex flex-col gap-2 p-6 px-20 rounded-md shadow-xl justify-center items-center bg-zinc-700 max-w-xl align-middle mx-auto'>
-          <div className='flex flex-col gap-2 pb-4'>
-            <Image
-              src='/pm2.logo.png'
-              alt='wordstamp'
-              width={200}
-              height={200}
-              className=''
-            />{' '}
-          </div>{' '}
-          {/* <button
-            onClick={() => signIn('github')}
-            className='bg-zinc-950 p-3 rounded-md flex gap-2 items-center'
-          >
-            <FontAwesomeIcon icon={faGithub} className='text-xl text-white' />
-            Sign in with GitHub
-          </button> */}
-          <div>
-            <form
-              className='flex flex-col gap-2 min-w-full'
-              onSubmit={handleSubmit}
-            >
-              <label htmlFor='username'></label>
-              <div className='flex gap-1'>
-                <input
-                  type='text'
-                  id='username'
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  className='p-1 px-2 rounded-md bg-zinc-900 text-white placeholder:text-gray-400'
-                  placeholder='username'
-                />
-                <label htmlFor='password'></label>
-                <input
-                  type='password'
-                  id='password'
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className='p-1 px-2 rounded-md bg-zinc-900 text-white placeholder:text-gray-400'
-                  placeholder='password'
-                />
-              </div>
-              <button
-                className={buttonClass}
-                type='submit'
-                disabled={!isFormFilled}
-              >
-                <FontAwesomeIcon
-                  icon={faArrowAltCircleRight}
-                  className='pr-2'
-                />
-                Login
-              </button>
-              {error && <p>{error}</p>}
-            </form>
-          </div>
-        </div>
-      </div>
+      <AuthButton />
     </div>
   );
 }

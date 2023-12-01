@@ -1,5 +1,5 @@
 // pages/api/auth.js
-import { setLoginSession } from '../../api/auth/auth';
+import { setLoginSession } from '../api/auth/auth';
 
 export default async function login(req, res) {
   const { username, password } = req.body;
