@@ -194,7 +194,7 @@ const AppCard = () => {
         {filteredGroupNames.map((groupName) => {
           const visibleApps = groupedApps[groupName].filter(toggleVisibility);
           if (visibleApps.length === 0) return null;
-          const groupBgColorClass = getGroupBackgroundColor(visibleApps); // Get the color based on the app statuses
+          const groupBgColorClass = getGroupBackgroundColor(visibleApps);
 
           return (
             <div
@@ -425,7 +425,7 @@ const AppCard = () => {
                     <button
                       className='bg-green-500 hover:bg-green-600 text-white p-2 rounded-md cursor-pointer'
                       onClick={() => {
-                        pm2AppAction(app.name, 'delete');
+                        pm2AppAction(groupName, 'delete'); // Use groupName here
                         // Close the Popover
                       }}
                     >
