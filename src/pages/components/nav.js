@@ -18,11 +18,11 @@ const Navbar = () => {
   return (
     <div className='px-3 w-full z-[100] fixed top-0 bg-black/80 backdrop-blur-sm h-[55px] justify-between items-center align-middle flex select-none cursor-default'>
       {' '}
-      <p className='font-bold text-gray-100 text-sm md:text-xl'>
+      <p className='font-bold text-gray-100 text-xl'>
         {' '}
         <FontAwesomeIcon
           icon={faHeartPulse}
-          className='pr-2 hidden md:relative'
+          className='pr-2 hidden md:inline-block'
         />{' '}
         PM2 UI
       </p>{' '}
@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           <FontAwesomeIcon
             icon={faBookBookmark}
-            className='pr-2 hidden md:relative'
+            className='pr-2 hidden md:inline-block'
           />{' '}
           PM2
         </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
         >
           <FontAwesomeIcon
             icon={faWaveSquare}
-            className='pr-2 hidden md:relative'
+            className='pr-2 hidden md:inline-block'
           />{' '}
           AZURE
         </button>
@@ -58,10 +58,7 @@ const Navbar = () => {
           }
           className='p-1 px-3 flex h-min items-center font-bold text-white rounded-md bg-gradient-to-r from-zinc-600 to-zinc-700   hover:bg-blue-300'
         >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className='pr-2 hidden md:relative'
-          />{' '}
+          <FontAwesomeIcon icon={faGithub} className='pr-2 hidden md:flex' />{' '}
           GITHUB
         </button>
         {/* <AuthButton /> */}
