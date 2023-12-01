@@ -48,6 +48,8 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 ![Screenshot_20231201_005028](https://github.com/thenickygee/pm2-ui/assets/75292383/b3b28836-9ef8-4305-acbc-687f367ac43e)
 
+> **Note:** The login redirect only works if your app is on localhost:3000.
+
 
 # ✨ Features 
 
