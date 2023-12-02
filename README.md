@@ -45,6 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 - Username: `admin`
 - Password: `admin`
+  
 ![auth](https://github.com/thenickygee/pm2-ui/assets/75292383/10216dc1-c8c7-4c1d-bc67-ec59fb6c4375)
 
 
@@ -69,7 +70,6 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 - Stop
 - Restart
 - Reload
-  
 ![actions](https://github.com/thenickygee/pm2-ui/assets/75292383/a04f4482-a010-4d3c-afd4-70bce0256d6a)
 
 ## 📜 Process Logs
@@ -82,7 +82,6 @@ Open [http://localhost:3000](http://localhost:3000) (or the port your app starts
 
 - By name
 - By status: online, error, stopped
-  
 ![filter](https://github.com/thenickygee/pm2-ui/assets/75292383/981b9a3e-d5a7-403c-9972-5a33c9b1c407)
 
 
